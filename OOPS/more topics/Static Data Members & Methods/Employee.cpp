@@ -47,3 +47,24 @@ int main()
 
     return 0;
 }
+
+
+
+
+
+// Pattern You Should Remember
+
+// All static counter programs follow this structure:
+
+// class X
+// {
+//     int data;
+//     static int count;
+
+// public:
+//     void setData();
+//     void getData();
+//     static void getCount();
+// };
+
+// int X::count;
