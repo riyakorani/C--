@@ -14,26 +14,25 @@ int main() {
     cout << "Enter operator (+,-,*,/) = ";
     cin >> op;
 
-    switch(op) {
-        case '+':
-            cout << "Sum = " << (a + b) << endl;
-            break;
-        case '-':
-            cout << "Subtraction = " << (a - b) << endl;
-            break;
-        case '*':
-            cout << "Multiplication = " << (a * b) << endl;
-            break;
-        case '/':
-            if(b != 0){
-                cout << "Division = " << (a / b) << endl;
-            } else {
-                cout << "Error: Division by zero!" << endl;
-            }
-            break;
-        default:
-            cout << "Not a valid operator" << endl;
-    }
+    double result;
+
+switch(op){
+    case '+': result = a + b; break;
+    case '-': result = a - b; break;
+    case '*': result = a * b; break;
+    case '/':
+        if(b == 0){
+            cout << "Error";
+            return 0;
+        }
+        result = a / b;
+        break;
+    default:
+        cout << "Invalid operator";
+        return 0;
+}
+
+cout << "Result: " << result;
 
     return 0;
 }

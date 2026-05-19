@@ -12,13 +12,13 @@ int main(){
     }else{
         num=0;
     }
-    switch (num){
-    case 1 : cout<<"Even";
+    switch(num){
+    case 1: cout << "Even";
         break;
-    case 2 : cout<<"odd";
-    
-    default: cout<<"not a valid number";
+    case 0: cout << "Odd";
         break;
-    }
+    default: cout << "Invalid";
+}
+
     return 0;
 }

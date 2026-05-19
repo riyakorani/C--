@@ -1,17 +1,16 @@
 #include<iostream>
 using namespace std;
 
-inline int square(int a){
-    return a*a;
+inline int Square(int n){
+    return n*n;
 }
-
 int main(){
     int num;
 
     cout<<"Enter number = ";
     cin>>num;
 
-    cout<<"Square = "<<square(num);
-
+    cout<<"Square is = "<<Square(num);
+    
     return 0;
 }

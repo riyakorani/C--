@@ -1,26 +1,16 @@
 #include<iostream>
 using namespace std;
 
-int power(int base, int exp){
+int power(int a, int b){
+    if(b == 0) return 1;
 
-    if(exp == 0){
-        return 1;
-    }
-
-    return base * power(base, exp - 1);
+    return a * power(a, b - 1);
 }
 
 int main(){
+    int a, b;
+    cin >> a >> b;
 
-    int base, exp;
-
-    cout<<"Enter base = ";
-    cin>>base;
-
-    cout<<"Enter exponent = ";
-    cin>>exp;
-
-    cout<<"Result = "<<power(base, exp);
-
+    cout << power(a, b);
     return 0;
 }

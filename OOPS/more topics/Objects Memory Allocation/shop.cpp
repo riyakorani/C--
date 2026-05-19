@@ -6,7 +6,7 @@ class Shop
     int itemId[100];
     int itemPrice[100];
     int counter;
-
+ 
 public:
     void initCounter(void) { counter = 0; }
     void setPrice(void);

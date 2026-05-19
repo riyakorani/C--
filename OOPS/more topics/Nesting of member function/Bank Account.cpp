@@ -10,7 +10,7 @@ public:
 };
 
 void Bank::deposit(){
-    int amount;
+    int amount = 0;
 
     cout<<"Enter deposit amount: ";
     cin>>amount;

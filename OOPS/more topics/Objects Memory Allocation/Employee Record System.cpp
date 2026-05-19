@@ -2,6 +2,7 @@
 using namespace std;
 
 class Employee{
+    private:
     string name[50];
     int id[50];
     int counter;

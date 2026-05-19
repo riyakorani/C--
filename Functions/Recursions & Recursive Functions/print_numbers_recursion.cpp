@@ -5,9 +5,9 @@ void numbers(int num){
     if(num==0){
         return;
     }
-    cout<<num<<" ";
-
-    numbers(num - 1);
+    
+     numbers(num - 1);
+    cout<<num<<endl;
 }
 
 int main(){

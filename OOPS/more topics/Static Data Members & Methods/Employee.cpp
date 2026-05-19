@@ -26,6 +26,7 @@ public:
 
 // Count is the static data member of class Employee
 int Employee::count; // Default value is 0
+// int Employee::count = 0;
 
 int main()
 {

@@ -13,3 +13,6 @@ int main(){
      cout<<"Smallest element = "<<smallest;
     return 0;
 }
+
+
+// int n = sizeof(arr)/sizeof(arr[0]);
